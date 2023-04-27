@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: cooktheryan
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/cooktheryan-backend
+  org: Summit23DevRHEL
+  name: cooktheryan-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: cooktheryan/poi-backend-app
+  tag: latest
